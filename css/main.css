@@ -161,10 +161,14 @@ header .container {
   justify-content: space-between;
 }
 
-header .container .menu-bar {
+header .container {
   font-size: 1.6rem;
   color: #000;
   cursor: pointer;
+}
+
+.menu-bar {
+  color: #ffff;
 }
 
 header .container nav {
@@ -317,6 +321,10 @@ header .container nav ul li a:hover {
 .services {
   position: relative;
   border-bottom: 0.2rem solid #f0f0f0;
+}
+
+.new {
+  padding-top: 25px;
 }
 
 .services .container {

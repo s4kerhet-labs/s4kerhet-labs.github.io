@@ -81,7 +81,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-const phoneNumber = "18293692529"; // cambia por tu número con código país
+const phoneNumber = "18299789100"; // cambia por tu número con código país
 
 document.querySelectorAll(".ws").forEach((button) => {
   button.addEventListener("click", () => {
