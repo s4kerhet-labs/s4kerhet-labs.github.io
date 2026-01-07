@@ -91,3 +91,30 @@ document.querySelectorAll(".ws").forEach((button) => {
     window.open(whatsappURL, "_blank");
   });
 });
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value;
+
+  const phoneNumber = "18299789100"; // TU NÚMERO con código país (RD = 1)
+
+  const whatsappMessage = `
+*NUEVO PEDIDO / CONSULTA*
+-------------------------
+Nombre: ${name}
+Correo: ${email}
+Servicio: ${service}
+Detalles:
+${message}
+  `;
+
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
+  window.open(url, "_blank");
+});

@@ -7,7 +7,9 @@
   outline: none;
   transition: all 0.3s ease-in-out;
 }
-
+.menu-bar {
+  color: #ffff;
+}
 :root {
   --topHeader: #ecf6fe;
   --blueColor: #000000;
@@ -167,10 +169,6 @@ header .container {
   cursor: pointer;
 }
 
-.menu-bar {
-  color: #ffff;
-}
-
 header .container nav {
   position: absolute;
   top: -100rem;
@@ -216,6 +214,7 @@ header .container nav ul li a:hover {
 
   header .container .menu-bar {
     display: none;
+    color: #ffff;
   }
 
   header .container nav {
@@ -976,6 +975,27 @@ header .container nav ul li a:hover {
   border-radius: 0.5rem;
   border: 0.1rem solid #f0f0f0;
   font-size: 1.6rem;
+}
+
+.seleccion {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #f0f0f0;
+  font-size: 1.6rem;
+  color: gray;
+}
+
+.seleccion option {
+  color: #000;
+}
+
+.seleccion:valid {
+  color: #000;
+}
+
+seleccion:focus::placeholder {
+  opacity: 0;
 }
 
 .contact .contact-container .contact-left form .form-group textarea {
